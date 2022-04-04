@@ -55,6 +55,7 @@ class agenda():
         self.tudo()
 
     def tudo(self):
+        self.criar_db()
         self.janela()
         self.frames()
         self.labels()
@@ -62,7 +63,7 @@ class agenda():
         self.botoes()
         self.binds()
         self.treeviews()
-        self.criar_db()
+        
 
     def criar_db(self):
         self.database = sqlite3.connect('Contatos.db')
