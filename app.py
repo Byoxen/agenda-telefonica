@@ -256,6 +256,7 @@ class agenda():
                                cursor='hand2')
         self.label7 = tk.Label(self.frame1, bg=branco,
                                text='Editar contato', font='RadHatDisplay 20')
+        self.label9 = tk.Label(self.frame1, text = '(Clique em cima de um contato)', font = 'RadHatDisplay 10', bg = branco, fg = roxo)
         self.label8 = tk.Label(
             self.frame2, bg=branco, text='Lista de Contatos', font='RadHatDisplay 20')
 
@@ -272,6 +273,7 @@ class agenda():
         self.label5.place(x=5, y=15)
         self.label6.place(x=200, y=15)
         self.label7.place(x=60, y=23)
+        self.label9.place(x=53, y=57)
         self.label8.place(x=155, y=23)
 
     def onlyletters(self, input):
